@@ -1,0 +1,19 @@
+<%- include('layout/header'); %>
+
+<h1><%= title %></h1><hr>
+
+<form method="POST" action="/api/users/login">
+      <div class="form-group">
+        <label for="inputEmail">Email:</label>
+        <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="inputPass">Password:</label>
+        <input type="password" class="form-control" name="password" id="inputPass" placeholder="Password" required>
+      </div>
+    <button type="submit" class="btn btn-primary mt-1">Login</button>
+</form>
+
+</div>
+
+<%- include('layout/footer'); %>

@@ -1,0 +1,21 @@
+<%- include('layout/header'); %>
+
+
+<h2 class="page-title mb-4">Edit User</h2>
+<a href="/api/userDetail" class="btn btn-light mb-4">Back to your Profile</a>
+
+<form method="POST" action="/api/userDetail/user-edit/<%= user.email %>" autocomplete="off">
+
+    <div class="form-group">
+        <label>Name:</label>
+        <input type="text" class="form-control" name="name" value="<%= user.name %>" placeholder="Name" required>
+    </div>
+    <div class="form-group">
+        <label>Age:</label>
+        <input type="number" min="12" class="form-control" name="age" value="<%= user.age %>" placeholder="Age" required>
+    </div>
+    
+    <button class="btn btn-success my-3">Submit</button>
+</form>
+
+<%- include('layout/footer'); %>
