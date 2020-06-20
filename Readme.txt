@@ -3,10 +3,10 @@ const values = ['pardeep', 'pp@gmail.com', 'pp', 21]
 
 const query = `
     CREATE TABLE users (
-        email varchar,
-        name varchar,
-        password varchar,
-        age int
+        email varchar PRIMARY KEY NOT NULL,
+        name varchar NOT NULL,
+        password varchar NOT NULL,
+        age int NOT NULL
     );
 `;
 
